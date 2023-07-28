@@ -17,6 +17,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.custom-text-shadow{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+}
 
 /* Code Css */
 
@@ -65,7 +68,12 @@ body {
     top: 150px;
 }
 
-
+.My_recent_works{
+    height: 128vh;
+    width: 100%;
+    background-image: url("/image/background_My_recent_works.svg");
+    background-position: cover;
+}
 
 
 .text-hero-1 {
