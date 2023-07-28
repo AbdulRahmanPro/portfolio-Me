@@ -55,7 +55,7 @@
     <!-- About Me Section -->
     <section class=" flex flex-rol justify-around items-center" style="height: 128vh; width:100%;  ">
         <!--content for Section  -->
-        <div class="flex flex-col w-fit space-y-4" style="">
+        <div class="flex flex-col w-fit space-y-4">
             <h1 class=" text-6xl text-hero-1">About <span class="text-hero-2">me</span></h1>
             <p style="width: 389px;" class="text-hero-1">I am Mohamed Sufi, a Full Stack MERN Developer with a passion
                 for building websites and web applications. With a strong background in web development, I have
@@ -74,26 +74,104 @@
         </div>
 
     </section>
-
     <!-- Section My recent works -->
-    <section class="My_recent_works flex flex-row items-center px-32	 ">
+    <section class="My_recent_works flex flex-row  items-center ">
         <!-- Nav for My recent works -->
-        <div>
-            <div class="nav_works  space-y-6 " style="border: 1px red solid;">
+        <div class=" w-screen h-screen  flex flex-col justify-around    ">
+            <div class=" space-y-6 flex flex-col ml-12 ">
+
                 <h1 class="text-hero-1 " style="font-size: 64px; font-weight: 700;">My recent <span
                         class="text-hero-2">works</span></h1>
-                <button class="flex items-start rounded-3xl  bg-primary-color" style="padding: 10px 32px;"
-                    type="button"><a class=" text-Text_color_primary custom-text-shadow"
-                        href="">Programming</a></button>
+                <div class=" w-fit">
+                    <button id="but_My_recent_works"
+                        class="flex items-start rounded-3xl but_works active:bg-primary-color text-Text_color_primary custom-text-shadow "
+                        style="padding: 10px 32px;" type="button">Programming</button>
+                </div>
             </div>
-            <div class="grup_cards">
-                <div class="">
+
+            <div class="grup_cards flex flex-row justify-around">
+                <div class="card flex  justify-center items-center ">
+                    <img id="img1" class=" rounded-xl " alt="" srcset="">
+
+                </div>
+                <div class="card flex  justify-center items-center ">
+                    <img id="img2" class=" rounded-xl " alt="" srcset="">
+
+                </div>
+                <div class="card flex  justify-center items-center ">
+                    <img id="img3" class=" rounded-xl " alt="" srcset="">
 
                 </div>
             </div>
         </div>
     </section>
+    <!-- Section Call Me -->
+    <section class="Call_Me flex flex-row items-center justify-around space-x-12">
+        <!-- Portrait of a man expression -->
+        <div class=" w-auto h-auto flex flex-col items-end ">
+            <div class=" ">
+                <p style="width: 400px;" class=" text-5xl text-Text_color_primary">Got a project in <span
+                        class="text-primary-color font-bold">mind?</span></p>
+            </div>
+            <img class="man_Sec_Call_Me" src="/image/Man Sec Call Me.svg" alt="" srcset="">
+        </div>
+        <!-- Fill in my contact information table -->
+        <div class="flex flex-col items-center justify-around s">
+            <!-- input fot name -->
+            <div class=" w-fit h-fit flex flex-row  p-5 space-x-4  ">
+                <div class=" w-fit h-fit flex flex-col items-start justify-around  space-y-5 ">
+                    <label class=" text-Text_color_primary " for="">Your name</label>
+                    <input class="input_design " type="text">
+                </div>
+                <!-- input for email -->
+                <div class=" w-fit h-fit flex flex-col items-start justify-around  space-y-5 ">
+                    <label class=" text-Text_color_primary " for="">Your email</label>
+                    <input class="input_design " type="email">
+                </div>
+            </div>
+            <!-- input for message -->
+            <div class=" w-fit h-fit flex flex-col items-start justify-around  space-y-5 ">
+                <label class=" text-Text_color_primary " for="">Your Message</label>
+                <input class="input_design_message" type="email">
+            </div>
+        </div>
+    </section>
 
+    <footer class="footer flex flex-col items-center justify-center ">
+
+       <div class=" flex flex-col items-center space-y-12  ">
+        <div class="flex flex-row space-x-24">
+            <div class="flex items-center space-x-2 space-y-2">
+                <img src="/image/icons/home.svg" alt="">
+                <p class="text-Text_color_primary">Home</p>
+            </div>
+            <div class="flex items-center space-x-2 space-y-2">
+                <img src="/image/icons/user.svg" alt="">
+                <p class="text-Text_color_primary">About Me</p>
+            </div>
+            <div class="flex items-center space-x-2 space-y-2">
+                <img src="/image/icons/phone.svg" alt="">
+                <p class="text-Text_color_primary">Call ME</p>
+            </div>
+        </div>
+
+        <div class=" flex flex-row  space-x-12">
+            <div class="icon">
+                <img src="/image/icons/facebook.svg" alt="" srcset="">
+            </div>
+            <div class="icon">
+                <img src="/image/icons/instagram.svg" alt="" srcset="">
+            </div>
+            <div class="icon">
+                <img src="/image/icons/twitter.svg" alt="" srcset="">
+            </div>
+            <div class="icon">
+                <img src="/image/icons/youtube.svg" alt="" srcset="">
+            </div>
+        </div>
+       </div>
+    </footer>
+    <script src="/dist/script.js"></script>
 </body>
 
 </html>
